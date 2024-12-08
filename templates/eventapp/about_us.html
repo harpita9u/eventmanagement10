@@ -1,0 +1,134 @@
+{% extends 'Navbar/ProjectNavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fbe505 /* Full background color */
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem auto;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            color: #333;
+        }
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            margin: 1rem;
+            width: 250px;
+            text-align: center;
+        }
+        .card-title {
+            color: #4CAF50;
+        }
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .footer p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+{% block body %}
+    <div class="jumbotron" style="background-color: #fae304; padding: 2rem; text-align: center;">
+        <h1>Welcome to Virtual Event Management Solutions!</h1>
+        <p>Revolutionizing the way events are planned, managed, and experienced in the digital era.</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Our Mission</h2>
+        <p>Our mission is to empower organizations and individuals to host successful virtual events by providing cutting-edge technology, comprehensive support, and exceptional service. We strive to create memorable and impactful experiences that transcend the limitations of physical boundaries.</p>
+
+        <h2 class="section-title">Our Services</h2>
+        <ul>
+            <li>Event Planning & Coordination</li>
+            <li>Webinar & Live Streaming</li>
+            <li>Virtual Conference Management</li>
+            <li>Exhibitions & Trade Shows</li>
+            <li>Networking Solutions</li>
+        </ul>
+
+        <h2 class="section-title">Why Choose Us?</h2>
+        <ul>
+            <li>Innovative Technology</li>
+            <li>Experienced Team</li>
+            <li>Customizable Solutions</li>
+            <li>Global Reach</li>
+            <li>24/7 Support</li>
+        </ul>
+
+        <h2 class="section-title">Meet Our Team</h2>
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">HARPITA, Developer</h5>
+                    <p class="card-text">A keen dedicated student to try out new things for always creating a new space to develop.</p>
+                </div>
+            </div>
+            <p></p>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">BHAVANI, Implementer</h5>
+                    <p class="card-text">With always a keen interest to learn about new things and having an urge to explore new technologies.</p>
+                </div>
+            </div>
+            <p></p>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">DEEPTHI, Tester</h5>
+                    <p class="card-text">Keen interest to test new things and implement them.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Contact Us</p>
+        <p>Email: 2300032992@kluniversity.in</p>
+        <p>Phone: +91 9635738448</p>
+        <p>Address: KL University, Vijayawada</p>
+        <p>© 2024 Virtual Event Management Solutions. All rights reserved.</p>
+    </div>
+{% endblock %}
+</body>
+</html>

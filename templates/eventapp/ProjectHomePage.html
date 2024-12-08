@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+{% extends 'Navbar/ProjectNavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Event Management</title>
+</head>
+<body>
+{% block body %}
+<p></p>
+<center><h1>Virtual Event Management Community Engagement</h1></center>
+<p></p>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/image4.jpg' %}" class="d-block w-100" alt="first" >
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/image1.jpg' %}" class="d-block w-100" alt="second" >
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/image5.avif' %}" class="d-block w-100" alt="third" >
+    </div>
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container my-5">
+    <h1 class="mb-4 text-center">Upcoming Events</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'images/image3.jpg' %}" class="card-img-top" alt="Event 1 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Webinar</h5>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#event1Modal">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'images/image2.jpg' %}" class="card-img-top" alt="Event 2 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Hackathon</h5>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#event2Modal">Learn More</a>
+                </div>
+            </div>
+        </div>
+<!--        <div class="col">-->
+<!--            <div class="card h-100">-->
+<!--                <img src="{% static 'images/image3.jpg' %}" class="card-img-top" alt="Event 3 Image">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Event 3</h5>-->
+<!--                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#event3Modal">Learn More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</div>
+
+<!-- Event Modals -->
+<div class="modal fade" id="event1Modal" tabindex="-1" aria-labelledby="event1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="event1ModalLabel">Webinar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Webinar Event
+Join us for an engaging and interactive webinar! Gain insights from expert speakers, participate in live polls, and enjoy seamless Q&A sessions. Perfect for staying updated on the latest trends and knowledge in your field, this event ensures a dynamic and collaborative virtual experience.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<!--                <a href="#" class="btn btn-primary">Register</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="event2Modal" tabindex="-1" aria-labelledby="event2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="event2ModalLabel">Webinar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Join Our Hackathon!
+Unleash your creativity, coding skills, and innovative spirit in our exciting Hackathon event! Collaborate with like-minded individuals, tackle real-world challenges, and turn your ideas into reality.
+
+What to Expect:
+
+Teamwork and Innovation: Work with a team or go solo to brainstorm, design, and build innovative solutions.
+Mentorship: Get guidance and insights from experienced mentors and industry professionals.
+Learning Opportunities: Enhance your skills in coding, problem-solving, and project management.
+Exciting Prizes: Win recognition and amazing rewards for your innovative solutions.
+Who Can Join?
+Open to developers, designers, entrepreneurs, and tech enthusiasts of all skill levels. Whether you’re a beginner or a seasoned professional, this event is for everyone with a passion for tech and innovation.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<!--                <a href="#" class="btn btn-primary">Register</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Repeat the modal structure for Event 2 and Event 3 -->
+
+{% endblock %}
+</body>
+</html>

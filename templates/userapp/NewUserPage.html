@@ -1,0 +1,250 @@
+<!-- templates/userapp/NewUserPage.html -->
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Include the new navbar -->
+    {% include 'userapp/new_user_navbar.html' %}
+
+    <!-- Main content area -->
+    <div class="container mt-5">
+        <h1><centre>                            Welcome, {{ user.username }}!</centre></h1>
+<!--        <p>This is your new user page.</p>-->
+<!--        <p>Explore the features and select your event.</p>-->
+        <!-- Add more content here -->
+    </div>
+    {% block body %}
+
+<!-- templates/userapp/new_user_page.html -->
+<div class="container my-5">
+    <h1 class="mb-4">Events</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">WEBINAR</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#event1Modal">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">CODATHON</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#event2Modal">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">BOOTCAMP</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#event3Modal">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">FORUMS</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#event4Modal">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">QUIZ SHOW</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#event5Modal">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">EDUCATIONAL BINGO</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#event6Modal">Learn More</a>
+                </div>
+            </div>
+        </div>
+<!--        <div class="col">-->
+<!--            <div class="card h-100">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Event 7</h5>-->
+<!--                    <p class="card-text">Description of Event 7</p>-->
+<!--                    <a href="#" class="btn btn-primary">Learn More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            <div class="card h-100">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Event 8</h5>-->
+<!--                    <p class="card-text">Description of Event 8</p>-->
+<!--                    <a href="#" class="btn btn-primary">Learn More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            <div class="card h-100">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Event 9</h5>-->
+<!--                    <p class="card-text">Description of Event 9</p>-->
+<!--                    <a href="#" class="btn btn-primary">Learn More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            <div class="card h-100">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Event 10</h5>-->
+<!--                    <p class="card-text">Description of Event 10</p>-->
+<!--                    <a href="#" class="btn btn-primary">Learn More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            <div class="card h-100">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Event 11</h5>-->
+<!--                    <p class="card-text">Description of Event 11</p>-->
+<!--                    <a href="#" class="btn btn-primary">Learn More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            <div class="card h-100">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Event 12</h5>-->
+<!--                    <p class="card-text">Description of Event 12</p>-->
+<!--                    <a href="#" class="btn btn-primary">Learn More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <!-- Add more event boxes as needed -->
+    </div>
+</div>
+    <!-- Event Modals -->
+<div class="modal fade" id="event1Modal" tabindex="-1" aria-labelledby="event1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #fff9b3; color: #333;"> <!-- Pastel yellow background and dark black font -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="event1ModalLabel" style="color: #333;">WEBINAR</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: #333;">
+                <p>Webinar Event<br>
+                Join us for an engaging and interactive webinar! Gain insights from expert speakers, participate in live polls, and enjoy seamless Q&A sessions. Perfect for staying updated on the latest trends and knowledge in your field, this event ensures a dynamic and collaborative virtual experience.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="event2Modal" tabindex="-1" aria-labelledby="event2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #fff9b3; color: #333;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="event2ModalLabel">CODATHON</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: #333;">
+                <p>Overview:
+                Codathon is a high-energy coding competition that brings together developers, designers, and tech enthusiasts to collaborate, innovate, and build cutting-edge solutions to real-world problems. Whether you're a seasoned programmer or a curious beginner, Codathon is the perfect platform to showcase your skills, learn new technologies, and connect with like-minded individuals.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="event3Modal" tabindex="-1" aria-labelledby="event3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #fff9b3; color: #333;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="event3ModalLabel">BOOTCAMP</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: #333;">
+                <p>Bootcamp Event
+                Dive into an intensive and hands-on learning experience with our Bootcamp! Designed to help you master new skills or enhance your expertise, this event offers practical sessions led by industry professionals. Collaborate with peers, work on real-world projects, and leave with actionable knowledge you can apply immediately.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="event4Modal" tabindex="-1" aria-labelledby="event4ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #fff9b3; color: #333;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="event4ModalLabel">FORUMS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: #333;">
+                <p>Forums Event
+                Engage in dynamic discussions and share insights in our interactive forums! This event brings together experts, thought leaders, and participants from diverse backgrounds to discuss trending topics, exchange ideas, and explore innovative solutions in a collaborative environment.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="event5Modal" tabindex="-1" aria-labelledby="event5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #fff9b3; color: #333;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="event5ModalLabel">QUIZ SHOW</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: #333;">
+                <p>Quiz Show Event
+                Put your knowledge to the test and have fun in our exciting Quiz Show! Compete with others in a lively and interactive environment filled with challenging questions, quick rounds, and great prizes. Whether you’re a trivia enthusiast or just looking for a fun experience, this event guarantees entertainment and engagement for everyone.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="event6Modal" tabindex="-1" aria-labelledby="event6ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #fff9b3; color: #333;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="event6ModalLabel">EDUCATIONAL BINGO</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: #333;">
+                <p>Educational Bingo Event
+                Learn while having fun with our Educational Bingo! This interactive event combines the excitement of bingo with valuable learning opportunities. Participants will test their knowledge across various subjects as they mark answers on their bingo cards. It’s an enjoyable and engaging way to reinforce learning while connecting with others.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
